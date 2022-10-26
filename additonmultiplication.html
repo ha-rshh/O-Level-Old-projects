@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Addition and Multiplication</title>
+  </head>
+  <body>
+    <div class="center" align="center">
+      <input id="firstnum" type="number" placeholder="Enter the first number" />
+      <br />
+      <br />
+      <input id="lastnum" type="number" placeholder="Enter the last number" />
+      <br /><br />
+      <button onclick="add()">Click to Add</button> &nbsp;
+      <button onclick="mul()">Click to Multiply</button> <br />
+      <br />
+      <textarea name="answer" id="answer" cols="5" rows="5"></textarea>
+      <!-- <div id="answer"></div> -->
+    </div>
+    <script>
+      function add() {
+        let firstnum, lastnum, c;
+        firstnum = document.getElementById("firstnum").value;
+        lastnum = document.getElementById("lastnum").value;
+        c = firstnum + lastnum;
+        document.getElementById("answer").innerHTML = c;
+    }
+    function mul() {
+        firstnum = document.getElementById("firstnum").value;
+        lastnum = document.getElementById("lastnum").value;
+        c = firstnum * lastnum;
+        document.getElementById("answer").innerHTML = c;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Redirect and Pop Up function</title>
+</head>
+<body>
+        <button type="submit" name= "submit" onclick="r()">Page Redirect</button> <br> <br>
+        <button type="submit" name= "submit" onclick="p()"> Paqe Print</button> <br><br>
+        <button type="alert" name="alert" onclick="alertp()"> Alert </button> <br><br>
+        <button type="prompt" name="prompt" onclick="promptpopup()"> Prompt</button> <br><br>
+        <button type="comfirm" name="confirm" onclick="confirmpopup()"> confirm </button> <br><br>
+
+<script>
+function r()
+{
+    window.open("factorial.html", "_self");
+}
+function p()
+{
+    window.print();
+}
+function  alertp()
+{
+    alert(" This is an alert")
+}
+function promptpopup()
+{
+    var string= prompt("Enter any String :")
+    alert (string);
+}
+function confirmpopup()
+{
+var c= confirm("Do You want to continue?")
+if (c==true)
+alert("You pressed ok button")
+else
+alert("You pressed Cancel Button")
+}
+
+</script>
+
+</body>
+</html>

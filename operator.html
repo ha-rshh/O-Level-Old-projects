@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+        NAME:
+        <input type="text" id="name" placeholder="Enter Your Name" /> <br><br>
+        ENGLISH:
+        <input type="number" id="english_marks" placeholder="English Marks" maxlength="2"/> <br><br>
+        MATHS:
+        <input type="number" id="maths_marks" placeholder="Maths Marks" maxlength="2"/><br><br>
+        SCIENCE:
+        <input type="number" id="science_marks" placeholder="Science Marks" maxlength="2" /><br><br>
+        COMPUTER:
+        <input type="number" id="computer_marks" placeholder="Computer Marks" maxlength="2"/><br><br>
+
+        <button class="btn" onclick="result()">Submit</button>
+      <p id="demo"></p>
+      <script>
+        function result() {
+          var name = document.getElementById("name").value;
+          var english_marks = document.getElementById("english_marks").value;
+          var maths_marks = document.getElementById("maths_marks").value;
+          var science_marks = document.getElementById("science_marks").value;
+          var computer_marks = document.getElementById("computer_marks").value;
+
+          var total= (english_marks>=33 &&  maths_marks>=33 &&  science_marks>=33 && computer_marks>=33) ? "Pass" : "FAIL";
+
+          var z = name + " is " +  total ;
+        //   alert(var= name + "is" + var total)
+          document.getElementById("demo").innerHTML = z;
+
+        }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+        function printprime() {
+          var a,
+            b = 0;
+          number = document.getElementById("number").value;
+  
+          for (a = 1; a <= number; a++) {
+            c = 0;
+            for (b = 1; b <= a; b++) {
+              if (a % b == 0) {
+                c++;
+              }
+            }
+            if (c == 2) {
+              document.getElementById('result').insertAdjacentHTML("beforeend", i + "<br>");
+            }
+          }
+        }
+      </script>
+  </head>
+
+  <body>
+      <h1>JavaScript to Print Prime numbers</h1>
+      Enter the number:
+      <input type="number" id=" number" name="number" min="0" />&nbsp; 
+      <!-- <button id="print" onclick="printprime()">Click to Print!</button> -->
+        <input type="submit" name="submit" onclick="printprime()" id="print">
+      <div id="result"></div>
+  </body>
+</html>

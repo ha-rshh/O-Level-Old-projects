@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function cal()
+    {
+        var i,  j=0;
+
+        limit= document.getElementById('limit').value;
+        for(i=1;i<=limit;i++)
+        {
+            c=0;
+            for(j=1; j<=i; j++)
+            {
+                if(i%j ==0){
+                    c++;
+                }
+            }
+            if(c==2)
+            {
+                // alert("The numbers are = " + i);
+                // document.getElementById('result').insertAdjacentElement("beforeend", i +  "<br>");
+            }
+        }
+    }
+    document.getElementById('clash').innerHTML(i + '<br>');
+</script>
+</head>
+<body>
+    <h1>Print Prime Numbers</h1>
+    Enter Your  Number : <input type="number" style="width:50px" min="0" id="limit" name="limit">
+    &nbsp;
+    <input type="submit" name="Print Prime Numbers" onclick="cal()">
+    <p  id="clash"> Here  is  the prime numbers</p>
+</body>
+</html>

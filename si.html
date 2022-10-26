@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div align="center">
+            <input id="amount" placeholder="Enter Amount">
+            <input id="rate" placeholder="Enter Rate of Interest">
+            <input id="time" placeholder="Enter Time Period (In Years)">
+            <button onclick="result()" id="btn" name="ok">Click here</button>
+        </div>
+        
+    <script>
+        function result()
+        {
+           amount= document.getElementById('amount').value;
+            rate= document.getElementById('rate').value;
+            time= document.getElementById('time').value;
+            alert("the simple interest of principal amount is " + (amount*rate*time/100));
+        }
+    </script>
+</body>
+</html>

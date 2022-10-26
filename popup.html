@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="r()" name="button" >
+      Redirect to Prime Number
+    </button> <br> <br>
+    <button type="alert" onclick="alert()" name="alert" >alert</button><br> <br>
+    <button type="submit" onclick="p()" name="print" >Print this page</button><br> <br>
+    <button  type="prompt" onclick="prompt()" name="prompt" >
+      Click to see message
+    </button><br> <br>
+    <button type="confirm" onclick="confirm()" name="confirm" >
+      Do you wish to continue?
+    </button><br> <br>
+
+    <script type= "text/javascript">
+
+      function r(){
+          window.open("operator.html", "_self")
+      }
+      function alert()
+      {
+          alert("do not click on suspicious links")
+      }
+      function p(){
+          window.print();
+      }
+      function prompt();
+      {
+          var string= prompt("Enter a message that you wish to display..");
+          alert(string);
+      }
+      function confirm()
+      {
+          var c= confirm("do you wish to continue?")
+          if (c== true)
+              alert("you pressed okay")
+          else
+              alert("you pressed cancel")
+      }
+    </script>
+  </body>
+</html>
